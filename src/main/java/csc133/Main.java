@@ -1,5 +1,6 @@
 package csc133;
 
+//checking to see if cred helper is set up
 
 public class Main {
     private static slGoLBoard my_board;
