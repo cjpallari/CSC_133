@@ -6,19 +6,17 @@ import org.lwjgl.glfw.GLFWFramebufferSizeCallback;
 import org.lwjgl.glfw.GLFWKeyCallback;
 import org.lwjgl.glfw.GLFWVidMode;
 
+import static csc133.spot.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.glfw.GLFW.glfwShowWindow;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public class slWindow {
 
-    private static long my_oglWindow = 0;
-    private static int WIN_WIDTH = 1000, WIN_HEIGHT = 1000;
-
     static GLFWErrorCallback errorCallback;
     static GLFWKeyCallback keyCallback;
     static GLFWFramebufferSizeCallback fbCallback;
-    static int WIN_POS_X = 0, WIN_POX_Y = 0;
+    //static int WIN_POS_X = 0, WIN_POX_Y = 0;
 
     void slWindow(int win_width, int win_height) {
         System.out.println("Call to slWindow:: (width, height) == ("

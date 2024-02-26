@@ -8,6 +8,9 @@ import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
+
+import static csc133.spot.WIN_HEIGHT;
+import static csc133.spot.WIN_WIDTH;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL20.*;
@@ -15,11 +18,12 @@ import static org.lwjgl.system.MemoryUtil.*;
 
 
 public class Main {
+
+    //static spot spot = new spot();
     static GLFWKeyCallback keyCallback;
     static GLFWFramebufferSizeCallback fbCallback;
 
     static long window;
-    final static int WIN_WIDTH = 1920, WIN_HEIGHT = 1080;
 
     private static final int OGL_MATRIX_SIZE = 16;
     // call glCreateProgram() here - we have no gl-context here
